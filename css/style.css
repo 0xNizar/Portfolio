@@ -1,0 +1,196 @@
+:root {
+    --color-text: #ee8887;
+    --hover-text: #db7271;
+    --primary-color: #db7271;
+    --bg-gradient-start: #1f1f1f;
+    --bg-gradient-end: #333;
+    --light-gray: #f1f1f1;
+    --dark-gray: #222;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar {
+    background-color: rgba(34, 34, 34, 0.9);
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--color-text);
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: var(--hover-text);
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: var(--hover-text);
+    color: #fff;
+}
+
+.landing-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-image: url('./img/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.landing-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.landing-text h1 span {
+    color: var(--primary-color);
+}
+
+.landing-text .subtitle {
+    font-size: 24px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.landing-text button {
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 18px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.landing-text button:hover {
+    background-color: #e56b62;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.avatar img {
+    width: 250px;
+    border-radius: 100%;
+    border: 5px solid var(--color-text);
+    height: 250px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.avatar img:hover {
+    transform: scale(1.1);
+}
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: var(--dark-gray);
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact-section .form-control {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    max-width: 500px;
+    background-color: #444;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact-section button {
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #e56b62;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.back-to-top:hover {
+    background-color: #e56b62;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
