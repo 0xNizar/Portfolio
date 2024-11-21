@@ -20,8 +20,20 @@ document.addEventListener("DOMContentLoaded", function () {
             backToTopBtn.style.display = "none";
         }
     };
-    
+
     window.scrollToTop = function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+
+    document.querySelector('.discord').addEventListener('click', () => {
+        window.open("https://discord.com")
+    });
+
+    document.querySelector('.github').addEventListener('click', () => {
+        window.open("https://github.com")
+    });
+
+    document.querySelector('.twitter').addEventListener('click', () => {
+        window.open("https://x.com")
+    });
 });

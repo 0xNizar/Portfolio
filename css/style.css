@@ -129,42 +129,17 @@ ul {
     transform: scale(1.1);
 }
 
-.contact-section {
-    padding: 60px 20px;
-    background-color: var(--dark-gray);
-    text-align: center;
+.social-icons {
+    font-size: 40px;
+    justify-content: center;
 }
 
-.contact-section h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
+.social-icons li {
+    margin: 0 10px 0 10px;
 }
 
-.contact-section .form-control {
-    margin-bottom: 15px;
-    padding: 15px;
-    border-radius: 5px;
-    border: none;
-    width: 80%;
-    max-width: 500px;
-    background-color: #444;
-    color: #fff;
-    font-size: 18px;
-}
-
-.contact-section button {
-    padding: 15px 30px;
-    background-color: var(--primary-color);
-    border: none;
-    font-size: 18px;
-    color: #fff;
-    border-radius: 50px;
+.social-icons li:hover {
     cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.contact-section button:hover {
-    background-color: #e56b62;
 }
 
 .back-to-top {
